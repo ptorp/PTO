@@ -1,0 +1,26 @@
+{
+  "id": "ed9c2a2f-8cce-4419-95b1-5a61543ee1f5",
+  "name": "ALProject1",
+  "publisher": "Default publisher",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "showMyCode": true,
+  "features": "TranslationFile",
+  "target": "Internal",
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "idRange": {
+    "from": 123456700,
+    "to": 123456799
+  }
+}
