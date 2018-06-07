@@ -9,7 +9,8 @@
             "serverInstance": "BDCkursus_PTO_SLN",
             "authentication": "UserPassword",                    
             "port": 8049,
-            "startupObjectId": 123456702
+            "startupObjectId": 123456713,
+            "schemaUpdateMode": "Recreate"
         }
     ]
 }
