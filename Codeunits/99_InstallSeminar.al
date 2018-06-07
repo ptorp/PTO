@@ -58,7 +58,7 @@ codeunit 123456799 InstallSeminar
         NoSerieLine."Series Code" := NoSerie.Code;
         NoSerieLine."Starting No." := 'SEMPREG0000';
         if NoSerieLine.Insert then;
-        SeminarSetup."Posted Seminar Reg. Nos" := NoSerie.code;
+        SeminarSetup."Posted Seminar Reg. Nos." := NoSerie.code;
 
         SeminarSetup.Modify;
 
@@ -74,7 +74,7 @@ codeunit 123456799 InstallSeminar
     begin
         Seminar."No.":='SOLDEV';
         Seminar.Validate(Name,'Solution Development');
-        Seminar.Validate("Gen. Product Posting Group",'MISC');
+        Seminar.Validate("Gen. Prod. Posting Group",'MISC');
         Seminar."Maximum Participants":=12;
         Seminar."Minimum Participants":=4;
         Seminar."Seminar Duration":=5;
@@ -90,7 +90,7 @@ codeunit 123456799 InstallSeminar
         Resource.Name:='Mr. Instructor';
         Resource.validate("Gen. Prod. Posting Group",'MISC');
         Resource."Direct Unit Cost":=100;
-        Resource."CSD_Qty. per Day":=8;
+        Resource."CSD_Quantity Per Day":=8;
         Resource.Type:=Resource.Type::Person;
         if Resource.Insert then;
         Resource."No.":='ROOM 01';

@@ -147,7 +147,7 @@ codeunit 123456700 "Seminar-Post"
     begin
         with SeminarRegHeader do
         begin
-            Resource.TestField("CSD_Qty. per Day");
+            Resource.TestField("CSD_Quantity Per Day");
             ResJnlLine.Init;
             ResJnlLine."Entry Type" := ResJnlLine."Entry Type"::Usage;
             ResJnlLine."Document No." := PstdSeminarRegHeader."No.";
@@ -162,7 +162,7 @@ codeunit 123456700 "Seminar-Post"
             ResJnlLine."Unit of Measure Code" := Resource."Base Unit of Measure";
             ResJnlLine."Unit Cost" := Resource."Unit Cost";
             ResJnlLine."Qty. per Unit of Measure" := 1;
-            ResJnlLine.Quantity := Duration * Resource."CSD_Qty. per Day";
+            ResJnlLine.Quantity := Duration * Resource."CSD_Quantity Per Day";
             ResJnlLine."Total Cost" := ResJnlLine."Unit Cost" * ResJnlLine.Quantity;
             ResJnlLine."CSD_Seminar No." := "Seminar No.";
             ResJnlLine."CSD_Seminar Registration No." := PstdSeminarRegHeader."No.";
